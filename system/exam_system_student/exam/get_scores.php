@@ -3,9 +3,9 @@
 require_once "../db/connect_sql.php";
  
 session_start();
- $studentNo =  $_SESSION['studentNo'];
- if(isset($studentNo)){
- 	
+
+ if(isset( $_SESSION['studentNo'])){
+ 	 $studentNo =  $_SESSION['studentNo'];
 	$db = new mysql();  
 	$link = $db->connect2();  
 
@@ -27,7 +27,7 @@ session_start();
 		//echo json_encode(array('message'=>'添加题目成功','status'=>1),JSON_UNESCAPED_UNICODE);
 	}
  }else{
- 	echo json_encode(array('message'=>'获取成绩失败(session)','status'=>-1),JSON_UNESCAPED_UNICODE);
+ 	echo json_encode(array('message'=>'获取成绩失败(请重新登录)','status'=>-2),JSON_UNESCAPED_UNICODE);
  }
 
 ?>

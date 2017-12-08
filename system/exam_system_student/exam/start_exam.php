@@ -18,8 +18,9 @@ function array_remove($data, $key){
 } 
 
 session_start();
- $studentNo =  $_SESSION['studentNo'];	//学号
- if(isset($studentNo)){
+
+ if(isset( $_SESSION['studentNo'])){
+ 	$studentNo =  $_SESSION['studentNo'];	//学号
  	$id = $_GET['id'];		//获取id
  	$db = new mysql();  
 	$link = $db->connect2();  
@@ -110,7 +111,7 @@ session_start();
 		}
 	}
  }else{
-	echo json_encode(array('message'=>'考试失败(未登录)，请重试','status'=>-1),JSON_UNESCAPED_UNICODE);
+	echo json_encode(array('message'=>'考试失败(请重新登录)，请重试','status'=>-2),JSON_UNESCAPED_UNICODE);
  }
 
 

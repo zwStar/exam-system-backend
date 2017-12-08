@@ -4,10 +4,10 @@
 require_once "../db/connect_sql.php";
  
 session_start();
- $teacherNo =  $_SESSION['teacherNo'];
- $studentNo =  $_SESSION['studentNo'];
-if(isset($teacherNo) || isset($studentNo)){
-	$studentNo = $studentNo?$studentNo:$_GET['studentNo'];
+
+if(isset($_SESSION['teacherNo'])){
+	$teacherNo =  $_SESSION['teacherNo'];
+	$studentNo = $_GET['studentNo'];
 	$id = $_GET['id'];		//得到该试卷id
 
 	$db =  new mysql();  

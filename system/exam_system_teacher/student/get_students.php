@@ -3,9 +3,9 @@
 require_once "../db/connect_sql.php";
 
 session_start();
- $teacherNo =  $_SESSION['teacherNo'];
- if(isset($teacherNo)){
- 	
+
+ if(isset($_SESSION['teacherNo'])){
+ 	$teacherNo =  $_SESSION['teacherNo'];
 	$db = new mysql();  
 	$link = $db->connect2();  
 
@@ -18,7 +18,7 @@ if($students === false){
 }
 
  }else{
- 	echo json_encode(array('message'=>'获取学生失败','status'=>-1),JSON_UNESCAPED_UNICODE);
+ 	echo json_encode(array('message'=>'获取学生失败','status'=>-2),JSON_UNESCAPED_UNICODE);
  }
 
 

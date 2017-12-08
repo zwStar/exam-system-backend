@@ -3,7 +3,7 @@ require_once "../db/connect_sql.php";
 
 // $studentNo = $_POST['studentNo'];
 
-$studentNo = '201541404239';
+// $studentNo = '2015414239';
 $db = new mysql();  
 $link = $db->connect2(); 
 

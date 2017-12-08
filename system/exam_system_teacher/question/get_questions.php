@@ -2,9 +2,9 @@
 require_once "../db/connect_sql.php";
  
 session_start();
- $teacherNo =  $_SESSION['teacherNo'];
- if(isset($teacherNo)){
- 	
+
+if(isset($_SESSION['teacherNo'])){
+ 	$teacherNo =  $_SESSION['teacherNo'];
 	$db = new mysql();  
 	$link = $db->connect2();  
 

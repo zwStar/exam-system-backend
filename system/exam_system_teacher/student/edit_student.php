@@ -3,8 +3,9 @@
 require_once "../db/connect_sql.php";
  
 session_start();
- $teacherNo =  $_SESSION['teacherNo'];
- if(isset($teacherNo)){
+
+ if(isset($_SESSION['teacherNo'])){
+ 	$teacherNo =  $_SESSION['teacherNo'];
  	$studentNo = $_POST['studentNo'];
 	$grade = $_POST['grade'];
 	$classNo = $_POST['classNo'];
@@ -29,7 +30,7 @@ if($students === false){
 }
 
  }else{
- 	echo json_encode(array('message'=>'修改学生失败','status'=>-1),JSON_UNESCAPED_UNICODE);
+ 	echo json_encode(array('message'=>'修改学生失败，请重新登录','status'=>-2),JSON_UNESCAPED_UNICODE);
  }
 
 ?>

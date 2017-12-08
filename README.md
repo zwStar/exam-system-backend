@@ -1,5 +1,5 @@
 
-# back-system-manager
+# exam-system-backend
 ###一个php + mysql 实现在线考试系统后端 前端用vue写的 项目实现前后端分离 前台用axios向后端请求，php返回json数据给前端渲染
 
 
@@ -7,7 +7,7 @@ php课程设计，做了一个在线考试系统，该系统为了2个，一个�
 
 前端地址
  -  [vue-exam-system-student](https://github.com/zwStar/vue-exam-system-student)  
- -  [vue-exam-system-manager](https://github.com/zwStar/vue-exam-system-manager) 
+ -  [vue-exam-system-teacher](https://github.com/zwStar/vue-exam-system-teacher) 
 
 
 
@@ -17,7 +17,7 @@ php课程设计，做了一个在线考试系统，该系统为了2个，一个�
 - 学生成绩
 - 新增题库
 - 安排考试
-- 批改试卷
+- 批改试卷(自动批改选择题，判断题，手动批改填空题)
 - 查看某次考试总体成绩分布
 - 添加老师
 - 编辑老师

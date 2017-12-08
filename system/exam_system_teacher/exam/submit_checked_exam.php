@@ -4,8 +4,8 @@
 require_once "../db/connect_sql.php";
  
 session_start();
- $teacherNo =  $_SESSION['teacherNo'];
- if(isset($teacherNo)){
+if(isset($_SESSION['teacherNo'])){
+	$teacherNo =  $_SESSION['teacherNo'];
  	$score = $_POST['score'];
  	$id = $_POST['id'];
 	$db = new mysql();  

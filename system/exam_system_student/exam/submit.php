@@ -6,8 +6,9 @@ $link = $db->connect2();
 
 
 session_start();
- $studentNo =  $_SESSION['studentNo'];
- if(isset($studentNo)){
+
+ if(isset( $_SESSION['studentNo'])){
+ 	$studentNo =  $_SESSION['studentNo'];
  	$judge_answer = $_POST['judge_answer'];			//判断题答案
 	$select_answer = $_POST['select_answer'];		//选择题答案
 	$insert_answer = $_POST['insert_answer'];		//填空题答案

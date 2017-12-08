@@ -3,9 +3,10 @@
 require_once "../db/connect_sql.php";
  
 session_start();
- $teacherNo =  $_SESSION['teacherNo'];
 
-if(isset($teacherNo)){
+
+if(isset($_SESSION['teacherNo'])){
+	 $teacherNo =  $_SESSION['teacherNo'];
 	$academic_year = $_POST['academic_year'];	//学年
 	$grade = $_POST['grade'];	//年级
 	$subject = $_POST['subject'];	//科目

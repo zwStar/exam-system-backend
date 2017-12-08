@@ -6,8 +6,9 @@ $link = $db->connect2();
 
 
 session_start();
- $teacherNo =  $_SESSION['teacherNo'];
- if(isset($teacherNo)){
+
+if(isset($_SESSION['teacherNo'])){
+    $teacherNo =  $_SESSION['teacherNo'];
 	$subject = $_GET['subject'];
 	$studentNo = $_GET['studentNo'];					//exam_id
 

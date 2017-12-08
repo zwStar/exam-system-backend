@@ -36,7 +36,14 @@ class mysql{
         mysql_select_db('exam_system') or die('指定的数据库打开失败');  
         return $link;  
     } 
-       
+      
+      
+      
+    /* array( 
+    'username'=>'cy', 
+    'password'=>'123456', 
+    'email'=>'cy@qq.com' 
+    ) */  
       
     /** 
      * 插入记录的操作 
