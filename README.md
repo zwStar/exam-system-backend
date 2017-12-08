@@ -7,7 +7,7 @@ php课程设计，做了一个在线考试系统，该系统为了2个，一个�
 
 前端地址
  -  [vue-exam-system-student](https://github.com/zwStar/vue-exam-system-student)  
- -  [vue-exam-system-manager](https://github.com/zwStar/vue-exam-system-manager) 
+ -  [vue-exam-system-manager](https://github.com/zwStar/vue-exam-system-manage) 
 
 
 
